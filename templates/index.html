@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Image Uploader</title>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}"
+</head>
+<body>
+  <form method="post" enctype="multipart/form-data">
+    <input type="file" name="photo">
+    <input type="submit">
+  <form/>
+  <a href="{{url_for('view')}}}">View photos</a>
+</body>
+</html>

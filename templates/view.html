@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Image Viewer</title>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}"
+</head>
+<body>
+  {% for pic in pics %}
+    <img src="{{ url_for('get_file', filename=pic) }}" alt="{{ pic }}">
+  {% endfor %}
+  <a href="{{url_for('home')}}">Back to Home</a>
+</body>
+</html>
